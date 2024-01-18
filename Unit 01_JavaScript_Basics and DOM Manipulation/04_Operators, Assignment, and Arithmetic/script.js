@@ -1,8 +1,13 @@
 let number1 = prompt("enter a number: ");
 let number2 = prompt("enter a number: ");
 
+
+let number1 = prompt("Enter a number: ");
+let number2 = prompt("Enter another number: ");
+
 number1 = +number1;
 number2 = +number2;
+
 
 console.log(typeof(number1))
 
