@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+div{
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: translate(50px,100px);
+}
+
+div#myDiv {
+  transform: rotate(20deg);
+}
+
+div#small {
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scale(0.5,0.5);
+}
+
+div#myDiv1 {
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+div#myDiv2 {
+  transform: matrix(1, 0, 0.5, 1, 150, 0);
+}
+
+div#another {
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scale(2,3);
+}
+
+</style>
+</head>
+<body>
+
+<h1>The translate() Method</h1>
+<p>The translate() method moves an element from its current position:</p>
+
+<div>
+the same size as small box
+</div>
+
+<div id="myDiv">
+    small box
+    </div>
+
+    <div id="small">
+        smaller box
+        </div>
+
+<div id="another">
+    BIGGER
+   </div>
+    
+    <div id="myDiv1">
+    side box
+    </div>
+    
+    <div id="myDiv2">
+    Bottom box
+    </div>
+
+
+</body>
+</html>

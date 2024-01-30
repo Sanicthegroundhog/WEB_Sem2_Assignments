@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+p.test1 {
+  white-space: nowrap; 
+  width: 200px; 
+  border: 1px solid #000000;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+p.test2 {
+  white-space: nowrap; 
+  width: 200px; 
+  border: 1px solid #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+p.test3 {
+  writing-mode: horizontal-tb; 
+}
+
+span.test4 {
+  writing-mode: vertical-rl; 
+}
+
+p.test4 {
+  writing-mode: vertical-rl; 
+}
+</style>
+</head>
+<body>
+
+<h1>text-overflow: clip:</h1>
+<p class="test1">FREEEEEEEEEEEEEEEDDDDDDDDDDDDDDDY</p>
+
+<h1>text-overflow: ellipsis:</h1>
+<p class="test2">FAZBEARRRRRRRRRRRRRRRRRRRRRRRRRRR</p>
+
+<h2>The writing-mode Property</h2>
+
+<p class="test3">Freddy Fazbear</p>
+
+<p>Freddy <span class="test4">HARHARHARHAR</span> Fazbear</p>
+
+<p class="test4">HARHARHARHARHARHARHARHARHARHARHARHARHARHARHARHARHARHARHARHARHARHARHARHARHARHARHARHAR</p>
+</body>
+</html>
+
+
