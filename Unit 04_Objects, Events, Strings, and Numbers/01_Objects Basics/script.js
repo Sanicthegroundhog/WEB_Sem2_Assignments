@@ -5,13 +5,11 @@ const building = {
   floors: 3,
 
    place : function(){
-      return this.address + this.city + this.state + this.floors;
+      return this.address + this.city + " " + this.state + this.floors;
   }
-}
+};
 
-console.log(address);
-console.log(city);
-console.log(state);
+console.log(building.address);
+console.log(building.city);
+console.log(building.state);
 console.log(building.place());
-
-
