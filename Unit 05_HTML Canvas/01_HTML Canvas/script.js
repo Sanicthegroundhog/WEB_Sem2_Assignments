@@ -45,3 +45,17 @@ function drawLine() {
     // Stroke it (Do the Drawing)
     ctx.stroke();
 }
+
+function drawText() {
+    let startX = +document.getElementById("startX").value;
+    let startY = +document.getElementById("startY").value;
+    let endX = +document.getElementById("endX").value;
+    let endY = +document.getElementById("endY").value;
+
+    const canvas = document.getElementById("myCanvas4");
+
+    var c = document.getElementById("myCanvas4");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.strokeText("Hello World",10,50);
+}
