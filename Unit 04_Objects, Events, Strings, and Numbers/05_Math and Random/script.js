@@ -7,3 +7,10 @@ function takeSquareRoot() {
     
 }
 
+function PI() {
+    document.getElementById("result").innerHTML = Math.PI;
+}
+
+function Round() {
+    document.getElementById("result").innerHTML = Math.round(7.8);
+}
