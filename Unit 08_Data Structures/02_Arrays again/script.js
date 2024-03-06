@@ -9,3 +9,20 @@ for(let i = 0; i < 10; i++){
 }
 
 document.getElementById("sorted").innerHTML = numbers;
+
+const numbers = []
+
+
+for (let i = 0; i < 10; i++) {
+    let num = Math.floor(Math.random() * 10) + 1;
+    numbers.push(num);
+}
+
+function filterOutEvens(number) {
+    return number % 2 === 1
+}
+
+let filteredNumbers = numbers.filter(filterOutEvens);
+
+
+document.getElementById("unsorted").innerHTML = filteredNumbers;
