@@ -40,7 +40,8 @@ switch (month) {
         document.getElementById("month").innerHTML = "December";
         break;
     default:
-        document.getElementById("month").innerHTML = "December";
-
+        document.getElementById("month").innerHTML = "Unknown Month";
         break;
 }
+
+// document.getElementById("month").innerHTML = document.getElementById("month").innerHTML +  " " + year;
