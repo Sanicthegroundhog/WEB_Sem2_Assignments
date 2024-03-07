@@ -44,6 +44,7 @@ switch (month) {
         break;
 }
 
+<<<<<<< HEAD
  document.getElementById("month").innerHTML = document.getElementById("month").innerHTML +  " " + year;
 
  const calendarMap = new Map([
@@ -90,5 +91,54 @@ switch (month) {
  
 
 for(let i = 1; i < 35; i++){
+=======
+document.getElementById("month").innerHTML = document.getElementById("month").innerHTML +  " " + year;
+
+
+const calendarMap = new Map([
+    [1, "1-1"],
+    [2, "1-2"],
+    [3, "1-3"],
+    [4, "1-4"],
+    [5, "1-5"],
+    [6, "1-6"],
+    [7, "1-7"],
+    [8, "2-1"],
+    [9, "2-2"],
+    [10, "2-3"],
+    [11, "2-4"],
+    [12, "2-5"],
+    [13, "2-6"],
+    [14, "2-7"],
+    [15, "3-1"],
+    [16, "3-2"],
+    [17, "3-3"],
+    [18, "3-4"],
+    [19, "3-5"],
+    [20, "3-6"],
+    [21, "3-7"],
+    [22, "4-1"],
+    [23, "4-2"],
+    [24, "4-3"],
+    [25, "4-4"],
+    [26, "4-5"],
+    [27, "4-6"],
+    [28, "4-7"],
+    [29, "5-1"],
+    [30, "5-2"],
+    [31, "5-3"],
+    [32, "5-4"],
+    [33, "5-5"],
+    [34, "5-6"],
+    [35, "5-7"]
+]);
+
+const firstDayDate = new Date(year, month, 1);
+const firstDayNumber = firstDayDate.getDay() + 1;
+const firstDayDateNextMonth = new Date(year, month + 1, 1);
+
+
+for(let i = 1; i <= 35; i++){
+>>>>>>> 45f5a0ed0084414ee22208000a93dd4b6e6f99b5
 
 }
