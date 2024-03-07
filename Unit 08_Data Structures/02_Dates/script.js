@@ -44,4 +44,4 @@ switch (month) {
         break;
 }
 
-// document.getElementById("month").innerHTML = document.getElementById("month").innerHTML +  " " + year;
+ document.getElementById("month").innerHTML = document.getElementById("month").innerHTML +  " " + year;
