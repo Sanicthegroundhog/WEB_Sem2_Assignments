@@ -1,50 +1,50 @@
 const currentDate = new Date();
 const month = currentDate.getMonth();
-
 const year = currentDate.getFullYear();
 switch (month) {
     case 0:
-        document.getElementById("month").innerHTML = "January";
+        document.getElementById("month").innerHTML = "January " + year;
         break;
     case 1:
-        document.getElementById("month").innerHTML = "February";
+        document.getElementById("month").innerHTML = "February " + year;
         break;
     case 2:
-        document.getElementById("month").innerHTML = "March";
+        document.getElementById("month").innerHTML = "March " + year;
         break;
     case 3:
-        document.getElementById("month").innerHTML = "April";
+        document.getElementById("month").innerHTML = "April " + year;
         break;
     case 4:
-        document.getElementById("month").innerHTML = "May";
+        document.getElementById("month").innerHTML = "May " + year;
         break;
     case 5:
-        document.getElementById("month").innerHTML = "June";
+        document.getElementById("month").innerHTML = "June " + year;
         break;
     case 6:
-        document.getElementById("month").innerHTML = "July";
+        document.getElementById("month").innerHTML = "July " + year;
         break;
     case 7:
-        document.getElementById("month").innerHTML = "August";
+        document.getElementById("month").innerHTML = "August " + year;
         break;
     case 8:
-        document.getElementById("month").innerHTML = "September";
+        document.getElementById("month").innerHTML = "September " + year;
         break;
     case 9:
-        document.getElementById("month").innerHTML = "October";
+        document.getElementById("month").innerHTML = "October " + year;
         break;
     case 10:
-        document.getElementById("month").innerHTML = "November";
+        document.getElementById("month").innerHTML = "November " + year;
         break;
     case 11:
-        document.getElementById("month").innerHTML = "December";
+        document.getElementById("month").innerHTML = "December " + year;
         break;
     default:
         document.getElementById("month").innerHTML = "Unknown Month";
         break;
 }
 
- document.getElementById("month").innerHTML = document.getElementById("month").innerHTML +  " " + year;
+document.getElementById("month").innerHTML = document.getElementById("month").innerHTML + " " + year;
+
 
 const calendarMap = new Map([
     [1, "1-1"],
@@ -81,28 +81,30 @@ const calendarMap = new Map([
     [32, "5-4"],
     [33, "5-5"],
     [34, "5-6"],
-    [35, "5-7"]
+    [35, "5-7"],
+    [36, "6-1"],
+    [37, "6-2"],
+    [38, "6-3"],
+    [39, "6-4"],
+    [40, "6-5"],
+    [41, "6-6"],
+    [42, "6-7"]
 ]);
 
 const firstDayDate = new Date(year, month, 1);
 const firstDayNumber = firstDayDate.getDay() + 1;
-const firstDayDateNextMonth = new Date(year, month + 1, 1);
 const lastDayofMonth = new Date(year, month + 1, 1);
 lastDayofMonth.setDate(lastDayofMonth.getDate() - 1);
-const lastDayofMonthNumber = lastDayofMonth.getDate();
+const lastDayOfMonthNumber = lastDayofMonth.getDate();
 console.log(lastDayOfMonthNumber);
 
+for (let i = 1; i <= 42; i++) {
+    let check = i - firstDayNumber + 1;
+    let id = calendarMap.get(i);
 
-for(let i = 1; i <= 35; i++){
-    if (i < firstDayNumber){
-        let id = calendarMap.get(i);
+    if (check >= 1 && check <= 31) {
+        document.getElementById(id).innerHTML = check;
+    } else {
         document.getElementById(id).innerHTML = "";
     }
-    let check = i - firstDayDate + 1;
-    console.log(check >= 1)
-    if (check)
-    if (check >= 1 && check <= lastDayOfMonthNumber){
-        let id = calendar
-    }
-
 }
