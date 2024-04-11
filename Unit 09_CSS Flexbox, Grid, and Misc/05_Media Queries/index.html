@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.wrapper {overflow: auto;}
+
+#main {margin-left: 4px;}
+
+#leftsidebar {
+  float: none;
+  width: auto;
+}
+
+#menulist {
+  margin: 0;
+  padding: 0;
+}
+
+.menuitem {
+  background: #91d0db;
+  border: 1px solid #7c6666;
+  border-radius: 4px;
+  list-style-type: none;
+  margin: 4px;
+  padding: 2px;
+}
+
+@media screen and (min-width: 480px) {
+  #leftsidebar {width: 350px; float: left;}
+  #main {margin-left: 300px;}
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+  <div id="leftsidebar">
+    <ul id="menulist">
+      <li class="menuitem">SpongeBob</li>
+      <li class="menuitem">Patrick</li>
+      <li class="menuitem">Squidward</li>
+      <li class="menuitem">Sandy</li>
+      <li class="menuitem">Mr. Krabs</li>
+      <li class="menuitem">Gary</li>
+      <li class="menuitem">Plankton</li>
+    </ul>
+  </div>
+  
+  <div id="main">
+    <h1>SpongeBob</h1>
+    <p>All of the characters names</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
